@@ -4,7 +4,7 @@ myList = [27,19,23,32,84,2,55,14,16,42]
 ub = 9
 lb = 0 
 top = ub 
-Swap = True 
+Swap = True
 
 while Swap and top > lb:
     Swap = False
