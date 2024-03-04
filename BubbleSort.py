@@ -1,17 +1,18 @@
-def linear_Search(list1, n, key):  
-  
-    for i in range(0, n):  
-        if (list1[i] == key):  
-            return i  
-    return -1  
-  
-  
-list1 = [1 ,3, 5, 4, 7, 9]  
-key = 7  
-  
-n = len(list1)  
-res = linear_Search(list1, n, key)  
-if(res == -1):  
-    print("Element not found")  
-else:  
-    print("Element found at index: ", res)  
+def search(a, l, x):
+
+    # Traversing the array 
+    for i in range(l):
+        if (a[i] == x):
+            return i
+    return -1
+
+a = [10, 8, 6, 4, 2]
+print("The given array is ", a)
+x = 6
+print("Element to be searched is ", x)
+l = len(a)
+ind = search(a, l, x)
+if(ind == -1):
+    print("Element Not Found")
+else:
+    print("Element is at index ", ind)
